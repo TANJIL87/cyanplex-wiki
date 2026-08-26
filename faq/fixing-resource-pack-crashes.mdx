@@ -1,0 +1,67 @@
+---
+title: "Fix Minecraft Resource Pack Crashes on Cyan Plex"
+sidebarTitle: "Resource Pack Crashes"
+description: "Step-by-step fixes for Minecraft resource pack crashes on Cyan Plex, mostly affecting Intel UHD Graphics. Includes log paths for support."
+---
+
+Mostly affects Intel UHD Graphics. If you're on an older Intel integrated GPU, you're more likely to run into this. Follow the steps below in order.
+
+## Fix It Step by Step
+
+<Steps>
+  <Step title="Update Your Graphics Drivers">
+    Outdated Intel UHD drivers are the #1 cause. Visit [Intel's Download Center](https://www.intel.com/content/www/us/en/download-center/home.html) and install the latest driver for your GPU.
+  </Step>
+  <Step title="Update Minecraft">
+    Make sure you're on the latest release. The resource pack may use features not available in older versions.
+  </Step>
+  <Step title="Disable Iris / Sodium">
+    Iris can conflict with our resource pack. Remove or disable it from your mods folder, then try launching again.
+  </Step>
+  <Step title="Remove All Mods and Test">
+    Clear your `.minecraft/mods` folder and see if the crash is gone. If it is, re-add mods one by one to find the culprit.
+  </Step>
+  <Step title="Switch to a Clean Launcher">
+    FastClient and SKLauncher are known to inject extra mods that cause conflicts. Try [AstralRinth](https://git.astralium.su/didirus/AstralRinth/releases/tag/AR-0.16.102) instead — it launches Minecraft without adding anything extra.
+  </Step>
+</Steps>
+
+## Still Crashing? Get Support
+
+Support can help much faster if you share your logs upfront. Without them, diagnosing the issue is very difficult.
+
+When reaching out, please attach your **latest.log** and the **crash report** from your `.minecraft` folder.
+
+<Tabs>
+  <Tab title="Windows">
+    - Log file: `%AppData%\.minecraft\logs\latest.log`
+    - Crash reports: `%AppData%\.minecraft\crash-reports\`
+  </Tab>
+  <Tab title="macOS">
+    - Log file: `~/Library/Application Support/minecraft/logs/latest.log`
+    - Crash reports: `~/Library/Application Support/minecraft/crash-reports/`
+  </Tab>
+  <Tab title="Linux">
+    - Log file: `~/.minecraft/logs/latest.log`
+    - Crash reports: `~/.minecraft/crash-reports/`
+  </Tab>
+</Tabs>
+
+## Last Resort — Disable the Resource Pack
+
+You won't see our custom textures, but you'll still be able to play with everyone on the server.
+
+<Steps>
+  <Step title="Open the Server List">
+    Open Minecraft and go to the Server List tab.
+  </Step>
+  <Step title="Edit Cyan Plex">
+    Select Cyan Plex and click Edit.
+  </Step>
+  <Step title="Disable Server Resource Packs">
+    Set Server Resource Packs to `Disabled`.
+  </Step>
+  <Step title="Save and Join">
+    Save and join — the pack will no longer load.
+  </Step>
+</Steps>

@@ -1,13 +1,13 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "willow",
+  "name": "Cyan Plex",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#07c7cf",
+    "light": "#07c7cf",
+    "dark": "#192965"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://media.brand.dev/88f24593-19b0-4d82-a11d-602ffdc71731.png",
   "navigation": {
     "pages": [
       {
@@ -18,55 +18,79 @@
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "groups": [
+      {
+        "group": "Welcome",
+        "icon": "house",
+        "pages": [
+          "index",
+          "connect"
+        ]
+      },
+      {
+        "group": "Advanced",
+        "icon": "sword",
+        "pages": [
+          "advance/dungeon",
+          "advance/blacksmith",
+          "advance/blacksmith/the-forge"
+        ]
+      },
+      {
+        "group": "Fishing",
+        "icon": "fish",
+        "pages": [
+          "fishing/index",
+          "fishing/fish-menu",
+          "fishing/fish-shop",
+          "fishing/fish-stats",
+          "fishing/fishing-totem",
+          "fishing/fishing-augments",
+          "fishing/fishing-skill-tree",
+          "fishing/fishing-codex",
+          "fishing/the-weighing-station",
+          "fishing/fishing-deliveries"
+        ]
+      },
+      {
+        "group": "Server Basics",
+        "icon": "book-open",
+        "pages": [
+          "rules",
+          "vote",
+          "pebble",
+          "claiming"
+        ]
+      },
+      {
+        "group": "Help & FAQ",
+        "icon": "circle-question",
+        "pages": [
+          "faq",
+          "faq/fixing-resource-pack-crashes"
+        ]
+      }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "https://media.brand.dev/88f24593-19b0-4d82-a11d-602ffdc71731.png",
+    "dark": "https://media.brand.dev/88f24593-19b0-4d82-a11d-602ffdc71731.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://discord.cyanplex.net",
+        "label": "Discord"
+      },
+      {
+        "href": "https://store.cyanplex.net",
+        "label": "Store"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.cyanplex.net"
     }
   }
 }

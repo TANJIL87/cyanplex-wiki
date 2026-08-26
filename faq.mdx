@@ -1,0 +1,62 @@
+---
+title: "Cyan Plex FAQ: Common Questions Answered"
+sidebarTitle: "FAQ"
+description: "Answers to the most common Cyan Plex questions — from fixing high ping to applying for staff on our Minecraft server."
+---
+
+Got a question about playing on Cyan Plex? Below you'll find answers to the most common issues players run into, from connection problems to joining the team.
+
+<AccordionGroup>
+  <Accordion title="1. Having high ping while playing, how to fix? 📶">
+    🛜 Generally, the main reason for getting high ping is low internet speed. Test your internet speed from [speedtest.net](https://www.speedtest.net) — anything below 5 Mbps won't really help.
+
+    ---
+
+    📡 Try using a VPN. We recommend [Cloudflare Warp](https://1.1.1.1), as it can significantly optimize your ping. You can switch between `1.1.1.1` and `1.1.1.1 with Warp` modes in the VPN settings to find the best option for your connection.
+
+    ---
+
+    📶 **Check the ping and packet loss from your device:**
+
+    1. Open CMD with administrator access (press Windows key, type CMD, left click to open).
+    2. Type `ping play.cyanplex.net`.
+    3. You'll see a result like this:
+
+    ```text
+    Ping statistics for ***.**.**.** 
+        Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+    Approximate round trip times in milli-seconds:
+        Minimum = 65ms, Maximum = 66ms, Average = 65ms
+    ```
+
+    4. Check if the ping is high or if there's any packet loss.
+    5. If you notice high ping or packet loss, contact your ISP and explain: _"I'm experiencing bad ping and packet loss on this game server."_ Provide them with our server IP.
+
+    ---
+
+    🐞 **There's a common Windows issue that causes high ping. Follow these steps to fix it:**
+
+    ```text
+    Open CMD with administrator (Windows key, type CMD, right click and run as administrator)
+    Type: netsh interface tcp show global
+    Then type: netsh interface tcp set global rss=enabled
+    Then type: netsh interface tcp set global autotuninglevel=normal
+    ```
+
+    ---
+
+    📢 Have a quick look in your Discord announcement channel if there's any known issue with our host that may cause high ping.
+
+    🎟️ Still here? Head over to our 🛑┋report-forum and post a report about your issue with as much information as possible. Hopefully we can fix your issue.
+  </Accordion>
+
+  <Accordion title="2. How can I be a staff in Cyan Plex? 🦸">
+    Head over to the [✅〢apply-here](https://discord.com/channels/830658859449319425/972786873338593290) channel in our [Discord](https://discord.cyanplex.net) server and click on **Apply**. Our bot will ask some questions in your DM. Simply answer the questions truthfully.
+
+    Your application is then sent to our admin team. They will review it and reach out to you if they think you're eligible for the post — or decline you.
+
+    <Note>
+      If the channel is hidden, that may indicate we don't need any staff right now. You can check back later.
+    </Note>
+  </Accordion>
+</AccordionGroup>
