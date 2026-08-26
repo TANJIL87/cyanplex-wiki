@@ -34,7 +34,8 @@
           "advance/dungeon",
           "advance/blacksmith",
           "advance/blacksmith/the-forge"
-        ]
+        ],
+        "hidden": true
       },
       {
         "group": "Fishing",
