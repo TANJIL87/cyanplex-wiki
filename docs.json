@@ -23,8 +23,7 @@
         "group": "Welcome",
         "icon": "house",
         "pages": [
-          "index",
-          "connect"
+          "index"
         ]
       },
       {
