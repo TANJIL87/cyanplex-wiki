@@ -28,14 +28,15 @@
         ]
       },
       {
-        "group": "Advanced",
-        "icon": "sword",
+        "group": "Server Basics",
+        "icon": "book-open",
         "pages": [
-          "advance/dungeon",
-          "advance/blacksmith",
-          "advance/blacksmith/the-forge"
-        ],
-        "hidden": true
+          "rules",
+          "vote",
+          "pebble",
+          "claiming",
+          "untitled-page"
+        ]
       },
       {
         "group": "Fishing",
@@ -54,21 +55,21 @@
         ]
       },
       {
-        "group": "Server Basics",
-        "icon": "book-open",
-        "pages": [
-          "rules",
-          "vote",
-          "pebble",
-          "claiming"
-        ]
-      },
-      {
         "group": "Help & FAQ",
         "icon": "circle-question",
         "pages": [
           "faq",
           "faq/fixing-resource-pack-crashes"
+        ]
+      },
+      {
+        "group": "Advanced",
+        "icon": "sword",
+        "hidden": true,
+        "pages": [
+          "advance/dungeon",
+          "advance/blacksmith",
+          "advance/blacksmith/the-forge"
         ]
       }
     ]
@@ -97,5 +98,13 @@
   "fonts": {
     "family": "Poppins"
   },
-  "description": "Explore the official Cyan Plex Wiki, your complete guide to the server’s features, gameplay systems, commands, mechanics, and more. Learn how everything works, discover useful guides, and get the most out of your Cyan Plex experience."
+  "description": "Cyan Plex is the best Bangladeshi Minecraft server, built for players looking for a unique and exciting Bangladesh Minecraft experience. Discover Cyan Plex, a leading BD Minecraft server and Bangladeshi MC server featuring custom gameplay, unique features, community-driven experiences, and more. Whether you're searching for the best Bangladeshi Minecraft server, a Minecraft server in Bangladesh, BD MC, BD MC server, or Bangladeshi MC server, Cyan Plex is the place to play. Explore the complete Cyan Plex guide and wiki for server features, gameplay systems, commands, mechanics, and helpful guides.",
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "api": {
+    "playground": {
+      "credentials": true
+    }
+  }
 }
